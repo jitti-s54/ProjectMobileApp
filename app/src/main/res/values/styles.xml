@@ -8,4 +8,16 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="showusernamefont">
+        <item name="android:textSize">25dp</item>
+        <item name="android:textColor">#00FFFF</item>
+        <item name="android:textStyle">bold</item>
+
+    </style>
+    <style name="seachfilter">
+        <item name="android:background">#CD5C5C</item>
+        <item name="android:textSize">25dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
 </resources>

@@ -21,5 +21,7 @@ class MainActivity : AppCompatActivity() {
             // start your next activity
             startActivity(intent)
         }
+//        setContentView(R.layout.activity_searchfilter)
+
     }
 }

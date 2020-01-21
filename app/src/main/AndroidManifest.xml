@@ -9,12 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+<!--<<<<<<< HEAD-->
         <activity android:name=".DescriptionActivity"></activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".Bottomnavigation"
             android:label="@string/title_activity_bottomnavigation" />
         <activity android:name=".EditActivity" />
-        <activity android:name=".Bottomnavigation">
+<!--=======-->
+        <activity android:name=".searchfilter"></activity>
+        <activity android:name=".Navigate" />
+        <activity android:name=".Chat" />
+        <activity android:name=".MainActivity">
+<!--&gt;>>>>>> 16ffcd73b1c09d77c5b6a05b5d961bf69a3ce7cf-->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
