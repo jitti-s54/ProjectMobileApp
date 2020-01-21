@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Petlover</string>
+    <string name="typzssage">Type a Message</string>
+    <string name="userforname">Username</string>
+    <string name="descrip">ToDO</string>
+    <string name="testmessage">สวัสดีครับ</string>
+    <string name="testmessage2">สวัสดี</string>
+    <string name="navitouser">ตำแหน่งของ Username</string>
+    <string name="seachtitle">ค้นหา</string>
+    <string name="friendpet">หาเพื่อน</string>
+    <string name="lostpet">สัตว์หาย</string>
+    <string name="typesearch">Type for Search</string>
 </resources>
