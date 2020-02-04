@@ -3,4 +3,17 @@
     <string name="app_name">Petlover</string>
     <string name="edit">แก้ไข</string>
     <string name="thai">ไทย</string>
+    <string name="sex" >เพศ</string>
+    <string name="age" >วันเกิด</string>
+    <string name="title_home" >หน้าหลัก</string>
+    <string name="title_dashboard" >แดชบอร์ด</string>
+    <string name="title_notifications" >แจ้งเตือน</string>
+    <string name="cancle" >ยกเลิก</string>
+    <string name="detail" >รายละเอียด</string>
+    <string name="addimg" >เพิ่มรูปภาพ</string>
+    <string name="time">เวลา</string>
+    <string name="find">ตามหา</string>
+    <string name="type_pet">ประเภทสัตว์</string>
+    <string name="chat_button">แชท</string>
+    <string name="desciption" >รายละเอียด</string>
 </resources>

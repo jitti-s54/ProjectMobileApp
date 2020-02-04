@@ -2,15 +2,15 @@
     <string name="app_name">Petlover</string>
     <string name="edit">Edit</string>
     <string name="name" translatable="false">Name</string>
-    <string name="sex" translatable="false">Sex</string>
-    <string name="age" translatable="false">Age</string>
-    <string name="cancle" translatable="false">CANCLE</string>
-    <string name="detail" translatable="false">Detail</string>
-    <string name="addimg" translatable="false">เพิ่มรูปภาพ</string>
+    <string name="sex" >Gender</string>
+    <string name="age" >ฺBirthday</string>
+    <string name="cancle" >CANCEL</string>
+    <string name="detail" >Detail</string>
+    <string name="addimg" >Add image</string>
     <string name="title_activity_bottomnavigation" translatable="false">Bottomnavigation</string>
-    <string name="title_home" translatable="false">Home</string>
-    <string name="title_dashboard" translatable="false">Dashboard</string>
-    <string name="title_notifications" translatable="false">แจ้งเตือน</string>
+    <string name="title_home" >Home</string>
+    <string name="title_dashboard" >Dashboard</string>
+    <string name="title_notifications" >Notifications</string>
     <string name="typzssage" translatable="false">Type a Message</string>
     <string name="userforname" translatable="false">Username</string>
     <string name="descrip" translatable="false">ToDO</string>
@@ -21,8 +21,12 @@
     <string name="friendpet" translatable="false">หาเพื่อน</string>
     <string name="lostpet" translatable="false">สัตว์หาย</string>
     <string name="typesearch" translatable="false">Type for Search</string>
-    <string name="desciption" translatable="false">Desciption</string>
+    <string name="desciption" >Desciption</string>
     <string name="addH" translatable="false">Add</string>
     <string name="thai">Thai</string>
+    <string name="time">time</string>
+    <string name="find">find</string>
+    <string name="type_pet">typePet</string>
+    <string name="chat_button">chat button</string>
 
 </resources>
