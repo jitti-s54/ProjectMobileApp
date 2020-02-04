@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Petlover</string>
     <string name="edit">Edit</string>
-    <string name="name" translatable="false">Name</string>
+    <string name="name" >Name</string>
     <string name="sex" >Gender</string>
     <string name="age" >ฺBirthday</string>
     <string name="cancle" >CANCEL</string>
@@ -28,5 +28,6 @@
     <string name="find">find</string>
     <string name="type_pet">typePet</string>
     <string name="chat_button">chat button</string>
+    <string name="index_0">Index = 0</string>
 
 </resources>

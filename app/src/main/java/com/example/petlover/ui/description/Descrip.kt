@@ -22,11 +22,8 @@ class Descrip : Fragment() {
     ): View? {
         DescripviewModel =
             ViewModelProviders.of(this).get(DescripViewModel::class.java)
-        val root = inflater.inflate(R.layout.descrip_fragment, container, false)
-        val textView: TextView = root.findViewById(R.id.text_description)
-        DescripviewModel.text.observe(this, Observer {
-            textView.text = it
-        })
+        val root = inflater.inflate(R.layout.fragment_descrip, container, false)
+
         return root
     }
 }

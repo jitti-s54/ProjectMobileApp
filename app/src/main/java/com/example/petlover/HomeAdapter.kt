@@ -5,6 +5,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageButton
 import android.widget.TextView
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 
 class HomeAdapter (private val userItems: ArrayList<User>): RecyclerView.Adapter<HomeAdapter.ViewHolder>() {
@@ -23,6 +24,9 @@ class HomeAdapter (private val userItems: ArrayList<User>): RecyclerView.Adapter
         holder.textViewAddress.text = user.address
         holder.imgIcon.setImageResource(user.icon)
         holder.imgStatus.setImageResource(user.status)
+        holder.itemView.setOnClickListener { View.OnClickListener {
+//            Toast.makeText(parent.context, "Click: "+ user.name , Toast.LENGTH_LONG).show()
+        } }
     }
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){

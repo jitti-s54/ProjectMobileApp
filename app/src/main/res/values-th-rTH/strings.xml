@@ -16,4 +16,6 @@
     <string name="type_pet">ประเภทสัตว์</string>
     <string name="chat_button">แชท</string>
     <string name="desciption" >รายละเอียด</string>
+    <string name="name">ชื่อ</string>
+    <string name="index_0">ลำดับ</string>
 </resources>

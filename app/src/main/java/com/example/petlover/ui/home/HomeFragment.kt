@@ -49,23 +49,5 @@ class HomeFragment : Fragment() {
         recyclerView.adapter = adapter
         return root
     }
-//    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-//        super.onViewCreated(view, savedInstanceState)
-//
-//        val recyclerView = root.findViewById(R.id.recyclerview) as RecyclerView
-//        recyclerView.layoutManager = GridLayoutManager(context, 1, GridLayoutManager.VERTICAL, false)
-//
-//        var users = ArrayList<User>()
-//
-//        users.add(User("Thai","Nine"))
-//        users.add(User("Thai","Nine"))
-//        users.add(User("Thai","Nine"))
-//        users.add(User("Thai","Nine"))
-//        users.add(User("Thai","Nine"))
-//        users.add(User("Thai","Nine"))
-//        users.add(User("Thai","Nine"))
-//        users.add(User("Thai","Nine"))
-//        val adapter = HomeAdapter(users)
-//        recyclerView.adapter = adapter
-//    }
+
 }

@@ -26,5 +26,5 @@
         android:id="@+id/navigation_description"
         android:name="com.example.petlover.ui.description.Descrip"
         android:label="@string/desciption"
-        tools:layout="@layout/descrip_fragment" />
+        tools:layout="@layout/fragment_descrip" />
 </navigation>
