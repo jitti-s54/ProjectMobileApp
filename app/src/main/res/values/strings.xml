@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Petlover</string>
     <string name="edit">Edit</string>
-    <string name="name" translatable="false">Name</string>
+    <string name="name">Name</string>
     <string name="sex" >Gender</string>
     <string name="age" >ฺBirthday</string>
     <string name="cancle" >CANCEL</string>
@@ -11,16 +11,16 @@
     <string name="title_home" >Home</string>
     <string name="title_dashboard" >Dashboard</string>
     <string name="title_notifications" >Notifications</string>
-    <string name="typzssage" translatable="false">Type a Message</string>
-    <string name="userforname" translatable="false">Username</string>
+    <string name="typzssage">Type a Message</string>
+    <string name="userforname">Username</string>
     <string name="descrip" translatable="false">ToDO</string>
     <string name="testmessage" translatable="false">สวัสดีครับ</string>
     <string name="testmessage2" translatable="false">สวัสดี</string>
-    <string name="navitouser" translatable="false">ตำแหน่งของ Username</string>
-    <string name="seachtitle" translatable="false">ค้นหา</string>
-    <string name="friendpet" translatable="false">หาเพื่อน</string>
-    <string name="lostpet" translatable="false">สัตว์หาย</string>
-    <string name="typesearch" translatable="false">Type for Search</string>
+    <string name="navitouser">Location Username</string>
+    <string name="seachtitle">Search</string>
+    <string name="friendpet">Find Friend</string>
+    <string name="lostpet">Lost Pet</string>
+    <string name="typesearch">Type for Search</string>
     <string name="desciption" >Desciption</string>
     <string name="addH" translatable="false">Add</string>
     <string name="thai">Thai</string>

@@ -16,4 +16,12 @@
     <string name="type_pet">ประเภทสัตว์</string>
     <string name="chat_button">แชท</string>
     <string name="desciption" >รายละเอียด</string>
+    <string name="typesearch" translatable="false">พิมพ์เพื่อค้นหา</string>
+    <string name="typzssage" translatable="false">พิมพ์ข้อความ</string>
+    <string name="userforname" translatable="false">ชื่อผู้ใช้</string>
+    <string name="seachtitle">ค้นหา</string>
+    <string name="friendpet" translatable="false">หาเพื่อน</string>
+    <string name="lostpet" translatable="false">สัตว์หาย</string>
+    <string name="name" translatable="false">ชื่อ</string>
+    <string name="navitouser">ตำแหน่งของผู้ใช้</string>
 </resources>
