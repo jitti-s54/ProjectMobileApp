@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "729193894331",
+    "firebase_url": "https://petlover-c8fa2.firebaseio.com",
+    "project_id": "petlover-c8fa2",
+    "storage_bucket": "petlover-c8fa2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:729193894331:android:ef68651d59db1a2aeb749e",
+        "android_client_info": {
+          "package_name": "com.example.petlover"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "729193894331-b8h3tapi8h9lrrcu013qtr1e3fq091bh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.petlover",
+            "certificate_hash": "e7390642e0967f2a128b15f8d68e3e78b6b929f6"
+          }
+        },
+        {
+          "client_id": "729193894331-5eho435qfd8cgmt42tonelhavjsfd8h8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFYAejtAF2uLw2bYVjQlari4dFZ_2Hr2g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "729193894331-5eho435qfd8cgmt42tonelhavjsfd8h8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
