@@ -6,6 +6,7 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textViewStyle">@style/anonymous_pro_font</item>
     </style>
 
     <style name="showusernamefont">
@@ -19,5 +20,10 @@
         <item name="android:textSize">25dp</item>
         <item name="android:textStyle">bold</item>
     </style>
-
+    <style name="NoActionBar" parent="Theme.AppCompat.Light">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="anonymous_pro_font">
+        <item name="android:fontFamily">@font/anonymous_pro</item>
+    </style>
 </resources>

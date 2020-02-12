@@ -6,10 +6,12 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
-import androidx.lifecycle.Observer
-
+import android.widget.Button
+import androidx.navigation.findNavController
 import com.example.petlover.R
+import com.example.petlover.ui.animaldetail.Animaldetail
+import com.example.petlover.ui.home.HomeFragment
+
 
 class Descrip : Fragment() {
 
@@ -22,8 +24,8 @@ class Descrip : Fragment() {
     ): View? {
         DescripviewModel =
             ViewModelProviders.of(this).get(DescripViewModel::class.java)
-        val root = inflater.inflate(R.layout.fragment_descrip, container, false)
-
+        val root = inflater.inflate(R.layout.fragment_addpet, container, false)
         return root
     }
+
 }

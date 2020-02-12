@@ -9,17 +9,17 @@
     android:background="@color/greyBackground">
 
     <androidx.cardview.widget.CardView
-        android:layout_width="wrap_content"
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:cardCornerRadius="5dp"
         app:cardElevation="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintStart_toStartOf="parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="360dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:padding="@dimen/activity_vertical_margin">
@@ -29,6 +29,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="70dp"
+                android:fontFamily="@font/anonymous_pro"
                 android:text="@string/name"
                 android:textSize="32sp"
                 app:layout_constraintBottom_toTopOf="@+id/text_description"
@@ -68,46 +69,48 @@
 
             <ImageButton
                 android:id="@+id/btnChat"
-                android:layout_width="33dp"
-                android:layout_height="28dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
                 android:background="@null"
+                android:contentDescription="@string/chat_button"
                 app:layout_constraintBottom_toBottomOf="@+id/displaytime"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.873"
                 app:layout_constraintStart_toEndOf="@+id/displaytime"
                 app:layout_constraintTop_toTopOf="@+id/displaytime"
                 app:layout_constraintVertical_bias="0.0"
-                app:srcCompat="@drawable/ic_chat_bubble_black_24dp"
-                android:contentDescription="@string/chat_button" />
+                app:srcCompat="@drawable/ic_chat_bubble_black_24dp" />
 
             <ImageButton
                 android:id="@+id/iconType"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="168dp"
                 android:layout_marginEnd="2dp"
                 android:background="@null"
+                android:contentDescription="@string/type_pet"
                 android:scaleType="fitXY"
+                app:layout_constraintBottom_toBottomOf="@+id/btnChat"
                 app:layout_constraintEnd_toStartOf="@+id/iconStatus"
-                app:layout_constraintHorizontal_bias="0.972"
+                app:layout_constraintHorizontal_bias="0.957"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/corgi"
-                android:contentDescription="@string/type_pet" />
+                app:layout_constraintTop_toTopOf="@+id/btnChat"
+                app:layout_constraintVertical_bias="1.0"
+                app:srcCompat="@drawable/corgi" />
 
             <ImageButton
                 android:id="@+id/iconStatus"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_marginEnd="4dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="12dp"
                 android:background="@null"
+                android:contentDescription="@string/find"
                 android:scaleType="fitXY"
-                app:layout_constraintBottom_toBottomOf="@+id/iconType"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/iconType"
+                app:layout_constraintBottom_toBottomOf="@+id/btnChat"
+                app:layout_constraintEnd_toStartOf="@+id/btnChat"
+                app:layout_constraintTop_toTopOf="@+id/btnChat"
                 app:layout_constraintVertical_bias="0.0"
-                tools:srcCompat="@drawable/love"
-                android:contentDescription="@string/find" />
-
+                tools:srcCompat="@drawable/love" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>

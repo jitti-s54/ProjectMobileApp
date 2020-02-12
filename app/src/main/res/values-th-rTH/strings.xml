@@ -18,4 +18,16 @@
     <string name="desciption" >รายละเอียด</string>
     <string name="name">ชื่อ</string>
     <string name="index_0">ลำดับ</string>
+    <string name="typesearch" >พิมพ์เพื่อค้นหา</string>
+    <string name="typzssage" >พิมพ์ข้อความ</string>
+    <string name="userforname" >ชื่อผู้ใช้</string>
+    <string name="seachtitle">ค้นหา</string>
+    <string name="friendpet" >หาเพื่อน</string>
+    <string name="lostpet" >สัตว์หาย</string>
+    <string name="navitouser">ตำแหน่งของผู้ใช้</string>
+    <string name="add_a_new_pet">เพิ่มสัตว์เลี้ยงตัวใหม่</string>
+    <string name="category">ประเภท</string>
+    <string name="addH" >เพิ่ม</string>
+    <string name="map">แผนที่</string>
+    <string name="search">ค้นหา</string>
 </resources>
