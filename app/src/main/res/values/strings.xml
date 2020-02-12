@@ -2,15 +2,15 @@
     <string name="app_name">Petlover</string>
     <string name="edit">Edit</string>
     <string name="name">Name</string>
-    <string name="sex" >Gender</string>
-    <string name="age" >ฺBirthday</string>
-    <string name="cancle" >CANCEL</string>
-    <string name="detail" >Detail</string>
-    <string name="addimg" >Add image</string>
+    <string name="sex">Gender</string>
+    <string name="age">ฺBirthday</string>
+    <string name="cancle">CANCEL</string>
+    <string name="detail">Detail</string>
+    <string name="addimg">Add image</string>
     <string name="title_activity_bottomnavigation" translatable="false">Bottomnavigation</string>
-    <string name="title_home" >Home</string>
-    <string name="title_dashboard" >Dashboard</string>
-    <string name="title_notifications" >Notifications</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
     <string name="typzssage">Type a Message</string>
     <string name="userforname">Username</string>
     <string name="descrip" translatable="false">ToDO</string>
@@ -21,7 +21,7 @@
     <string name="friendpet">Find Friend</string>
     <string name="lostpet">Lost Pet</string>
     <string name="typesearch">Type for Search</string>
-    <string name="desciption" >Desciption</string>
+    <string name="desciption">Desciption</string>
     <string name="addH" translatable="false">Add</string>
     <string name="thai">Thai</string>
     <string name="time">time</string>
