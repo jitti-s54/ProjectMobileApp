@@ -4,15 +4,10 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.LinearLayout
-import android.widget.TextView
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.petlover.HomeAdapter
 import com.example.petlover.R
 import com.example.petlover.User
 import java.util.ArrayList
@@ -32,19 +27,17 @@ class HomeFragment : Fragment() {
         recyclerView.layoutManager = GridLayoutManager(context, 1, GridLayoutManager.VERTICAL, false)
 
         var users = ArrayList<User>()
-
-        users.add(User("Thai1","Nine", R.drawable.cat, R.drawable.love))
-        users.add(User("Thai2","Nine", R.drawable.corgi, R.drawable.love))
-        users.add(User("Thai3","Nine", R.drawable.cat, R.drawable.love))
-        users.add(User("Thai4","Nine", R.drawable.corgi, R.drawable.love))
-        users.add(User("Thai5","Nine", R.drawable.corgi, R.drawable.love))
-        users.add(User("Thai6","Nine", R.drawable.cat, R.drawable.love))
-        users.add(User("Thai7","Nine", R.drawable.cat, R.drawable.love))
-        users.add(User("Thai8","Nine", R.drawable.cat, R.drawable.love))
-        users.add(User("Thai9","Nine", R.drawable.cat, R.drawable.love))
-        users.add(User("Thai10","Nine", R.drawable.cat, R.drawable.love))
-        users.add(User("Thai11","Nine", R.drawable.cat, R.drawable.love))
-        users.add(User("Thai11","Nine", R.drawable.corgi, R.drawable.love))
+        users.add(User("nine1",R.drawable.femenine,"2018-12-12", "Khon kean", "081-191-1669",R.drawable.cat, R.drawable.love))
+        users.add(User("Nine2",R.drawable.male,"2018-12-12", "Khon kean", "081-191-1669", R.drawable.corgi, R.drawable.love))
+        users.add(User("Nine3",R.drawable.femenine,"2018-12-12", "Khon kean", "081-191-1669", R.drawable.cat, R.drawable.love))
+        users.add(User("Nine4",R.drawable.femenine,"2018-12-12", "Khon kean", "081-191-1669", R.drawable.corgi, R.drawable.love))
+        users.add(User("Nine6",R.drawable.male,"2018-12-12", "Khon kean", "081-191-1669", R.drawable.cat, R.drawable.love))
+        users.add(User("Nine7",R.drawable.male,"2018-12-12", "Khon kean", "081-191-1669", R.drawable.cat, R.drawable.love))
+        users.add(User("Nine8",R.drawable.femenine,"2018-12-12", "Khon kean", "081-191-1669", R.drawable.cat, R.drawable.love))
+        users.add(User("Nine9",R.drawable.male,"2018-12-12", "Khon kean", "081-191-1669", R.drawable.cat, R.drawable.love))
+        users.add(User("Nine10",R.drawable.femenine,"2018-12-12", "Khon kean", "081-191-1669", R.drawable.cat, R.drawable.love))
+        users.add(User("Nine11",R.drawable.femenine,"2018-12-12", "Khon kean", "081-191-1669", R.drawable.cat, R.drawable.love))
+        users.add(User("Nine11",R.drawable.femenine,"2018-12-12", "Khon kean", "081-191-1669", R.drawable.corgi, R.drawable.love))
         val adapter = HomeAdapter(users)
         recyclerView.adapter = adapter
         return root

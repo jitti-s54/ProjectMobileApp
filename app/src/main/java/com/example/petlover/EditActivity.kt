@@ -12,7 +12,7 @@ class EditActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_edit)
         cancle.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, Bottomnavigation::class.java)
             // start your next activity
             startActivity(intent)
         }

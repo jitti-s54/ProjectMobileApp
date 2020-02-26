@@ -17,9 +17,9 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
         btnToDetail.setOnClickListener {
-            val intent = Intent(this, DescriptionActivity::class.java)
+//            val intent = Intent(this, DescriptionActivity::class.java)
             // start your next activity
-            startActivity(intent)
+//            startActivity(intent)
         }
 //        setContentView(R.layout.activity_searchfilter)
 
