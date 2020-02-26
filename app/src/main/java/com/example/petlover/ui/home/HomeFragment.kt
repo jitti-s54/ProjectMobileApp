@@ -9,7 +9,6 @@ import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.petlover.R
-import com.example.petlover.User
 import java.util.ArrayList
 
 class HomeFragment : Fragment() {
@@ -26,18 +25,128 @@ class HomeFragment : Fragment() {
         val recyclerView = root.findViewById(R.id.recyclerView) as RecyclerView
         recyclerView.layoutManager = GridLayoutManager(context, 1, GridLayoutManager.VERTICAL, false)
 
-        var users = ArrayList<User>()
-        users.add(User("nine1",R.drawable.femenine,"2018-12-12", "Khon kean", "081-191-1669",R.drawable.cat, R.drawable.love))
-        users.add(User("Nine2",R.drawable.male,"2018-12-12", "Khon kean", "081-191-1669", R.drawable.corgi, R.drawable.love))
-        users.add(User("Nine3",R.drawable.femenine,"2018-12-12", "Khon kean", "081-191-1669", R.drawable.cat, R.drawable.love))
-        users.add(User("Nine4",R.drawable.femenine,"2018-12-12", "Khon kean", "081-191-1669", R.drawable.corgi, R.drawable.love))
-        users.add(User("Nine6",R.drawable.male,"2018-12-12", "Khon kean", "081-191-1669", R.drawable.cat, R.drawable.love))
-        users.add(User("Nine7",R.drawable.male,"2018-12-12", "Khon kean", "081-191-1669", R.drawable.cat, R.drawable.love))
-        users.add(User("Nine8",R.drawable.femenine,"2018-12-12", "Khon kean", "081-191-1669", R.drawable.cat, R.drawable.love))
-        users.add(User("Nine9",R.drawable.male,"2018-12-12", "Khon kean", "081-191-1669", R.drawable.cat, R.drawable.love))
-        users.add(User("Nine10",R.drawable.femenine,"2018-12-12", "Khon kean", "081-191-1669", R.drawable.cat, R.drawable.love))
-        users.add(User("Nine11",R.drawable.femenine,"2018-12-12", "Khon kean", "081-191-1669", R.drawable.cat, R.drawable.love))
-        users.add(User("Nine11",R.drawable.femenine,"2018-12-12", "Khon kean", "081-191-1669", R.drawable.corgi, R.drawable.love))
+        var users = ArrayList<Model>()
+        users.add(
+            Model(
+                "nine1",
+                R.drawable.femenine,
+                "2018-12-12",
+                "Khon kean",
+                "081-191-1669",
+                R.drawable.cat,
+                R.drawable.love
+            )
+        )
+        users.add(
+            Model(
+                "Nine2",
+                R.drawable.male,
+                "2018-12-12",
+                "Khon kean",
+                "081-191-1669",
+                R.drawable.corgi,
+                R.drawable.love
+            )
+        )
+        users.add(
+            Model(
+                "Nine3",
+                R.drawable.femenine,
+                "2018-12-12",
+                "Khon kean",
+                "081-191-1669",
+                R.drawable.cat,
+                R.drawable.love
+            )
+        )
+        users.add(
+            Model(
+                "Nine4",
+                R.drawable.femenine,
+                "2018-12-12",
+                "Khon kean",
+                "081-191-1669",
+                R.drawable.corgi,
+                R.drawable.love
+            )
+        )
+        users.add(
+            Model(
+                "Nine6",
+                R.drawable.male,
+                "2018-12-12",
+                "Khon kean",
+                "081-191-1669",
+                R.drawable.cat,
+                R.drawable.love
+            )
+        )
+        users.add(
+            Model(
+                "Nine7",
+                R.drawable.male,
+                "2018-12-12",
+                "Khon kean",
+                "081-191-1669",
+                R.drawable.cat,
+                R.drawable.love
+            )
+        )
+        users.add(
+            Model(
+                "Nine8",
+                R.drawable.femenine,
+                "2018-12-12",
+                "Khon kean",
+                "081-191-1669",
+                R.drawable.cat,
+                R.drawable.love
+            )
+        )
+        users.add(
+            Model(
+                "Nine9",
+                R.drawable.male,
+                "2018-12-12",
+                "Khon kean",
+                "081-191-1669",
+                R.drawable.cat,
+                R.drawable.love
+            )
+        )
+        users.add(
+            Model(
+                "Nine10",
+                R.drawable.femenine,
+                "2018-12-12",
+                "Khon kean",
+                "081-191-1669",
+                R.drawable.cat,
+                R.drawable.love
+            )
+        )
+        users.add(
+            Model(
+                "Nine11",
+                R.drawable.femenine,
+                "2018-12-12",
+                "Khon kean",
+                "081-191-1669",
+                R.drawable.cat,
+                R.drawable.love
+            )
+        )
+        users.add(
+            Model(
+                "Nine11",
+                R.drawable.femenine,
+                "2018-12-12",
+                "Khon kean",
+                "081-191-1669",
+                R.drawable.corgi,
+                R.drawable.love
+            )
+        )
         val adapter = HomeAdapter(users)
         recyclerView.adapter = adapter
         return root

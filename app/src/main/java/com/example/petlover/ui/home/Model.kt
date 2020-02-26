@@ -1,8 +1,8 @@
-package com.example.petlover
+package com.example.petlover.ui.home
 
 import java.util.*
 
-data class User(
+data class Model(
     val name: String,
     val gender: Int,
     val date: String,
