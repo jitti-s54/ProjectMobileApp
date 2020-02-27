@@ -1,15 +1,12 @@
 package com.example.petlover.ui.chat
 
-import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
-import android.widget.Toast
 import com.example.petlover.R
 import androidx.recyclerview.widget.RecyclerView
-import com.example.petlover.Chat
-import kotlinx.android.synthetic.main.layout_list_item.view.*
+//import com.example.petlover.Chat
 
 
 class ChatAdapter (private val modelChatModel: ArrayList<ChatModel>): RecyclerView.Adapter<ChatAdapter.ViewHolder>() {
