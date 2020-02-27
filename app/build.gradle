@@ -3,6 +3,7 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 
 apply plugin: 'kotlin-android-extensions'
+apply plugin: 'com.google.gms.google-services'
 
 android {
     compileSdkVersion 28
@@ -40,7 +41,11 @@ dependencies {
     implementation 'androidx.navigation:navigation-ui-ktx:2.0.0'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.1.0'
+<<<<<<< HEAD
+    implementation 'com.google.firebase:firebase-database:16.0.4'
+=======
     implementation 'androidx.annotation:annotation:1.0.2'
+>>>>>>> a30927d8c33f84adc2fffa154cdd77e8f99e651f
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'

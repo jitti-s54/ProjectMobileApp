@@ -1,12 +1,15 @@
 <resources>
     <string name="app_name">Petlover</string>
     <string name="edit">Edit</string>
+<<<<<<< HEAD
+=======
     <string name="name">Name</string>
     <string name="sex">Gender</string>
     <string name="age">ฺBirthday</string>
     <string name="cancle">Cancel</string>
     <string name="detail">Detail</string>
     <string name="addimg">Add image</string>
+>>>>>>> a30927d8c33f84adc2fffa154cdd77e8f99e651f
     <string name="title_activity_bottomnavigation" translatable="false">Bottomnavigation</string>
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
@@ -21,8 +24,13 @@
     <string name="friendpet">Find Friend</string>
     <string name="lostpet">Lost Pet</string>
     <string name="typesearch">Type for Search</string>
+<<<<<<< HEAD
+    <string name="desciption" >Desciption</string>
+    <string name="addH" translatable="false">Add</string>
+=======
     <string name="desciption">Desciption</string>
     <string name="addH">Add</string>
+>>>>>>> a30927d8c33f84adc2fffa154cdd77e8f99e651f
     <string name="thai">Thai</string>
     <string name="time">time</string>
     <string name="find">find</string>
