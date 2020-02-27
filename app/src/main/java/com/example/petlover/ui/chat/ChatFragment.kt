@@ -37,6 +37,7 @@ class ChatFragment : Fragment() {
         chat.add(ChatModel("bird","15:19", "Hello world4"))
         chat.add(ChatModel("bird","15:19", "Hello world4"))
         val adapter = ChatAdapter(chat)
+        recyclerView.setHasFixedSize(true)
         recyclerView.adapter = adapter
         return root
     }

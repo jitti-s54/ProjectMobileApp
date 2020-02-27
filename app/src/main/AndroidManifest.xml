@@ -11,7 +11,8 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".RegisterActivity"
-            android:parentActivityName=".LoginActivity"></activity>
+            android:theme="@style/AppTheme.splash"
+            ></activity>
         <activity
             android:name=".LoginActivity"
             android:theme="@style/AppTheme.splash" />

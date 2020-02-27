@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
-    <solid android:color="@color/btnAccept"/>
+    <solid android:color="@color/colorBtn"/>
     <corners android:radius="10dp"/>
-    <stroke android:width="3dp" android:color="#e96606" />
+    <stroke android:width="3dp" android:color="@color/colorBtn" />
 
 </shape>
