@@ -8,7 +8,6 @@ import android.widget.TextView
 import android.widget.Toast
 import com.example.petlover.R
 import androidx.recyclerview.widget.RecyclerView
-import com.example.petlover.Chat
 import kotlinx.android.synthetic.main.layout_list_item.view.*
 
 
