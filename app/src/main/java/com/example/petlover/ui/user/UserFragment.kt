@@ -1,4 +1,4 @@
-package com.example.petlover.ui.animaldetail
+package com.example.petlover.ui.user
 
 import androidx.lifecycle.ViewModelProviders
 import android.os.Bundle
@@ -9,24 +9,24 @@ import android.view.ViewGroup
 
 import com.example.petlover.R
 
-class Animaldetail : Fragment() {
+class UserFragment : Fragment() {
 
     companion object {
-        fun newInstance() = Animaldetail()
+        fun newInstance() = UserFragment()
     }
 
-    private lateinit var viewModel: AnimaldetailViewModel
+    private lateinit var viewModel: UserViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_animaldetail, container, false)
+        return inflater.inflate(R.layout.fragment_user, container, false)
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProviders.of(this).get(AnimaldetailViewModel::class.java)
+        viewModel = ViewModelProviders.of(this).get(UserViewModel::class.java)
         // TODO: Use the ViewModel
     }
 

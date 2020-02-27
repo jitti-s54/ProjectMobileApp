@@ -22,95 +22,129 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="@dimen/activity_vertical_margin">
-
+            android:paddingTop="@dimen/activity_vertical_margin">
             <TextView
                 android:id="@+id/text_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="70dp"
+                android:layout_marginStart="82dp"
                 android:fontFamily="@font/anonymous_pro"
                 android:text="@string/name"
                 android:textSize="32sp"
-                app:layout_constraintBottom_toTopOf="@+id/text_description"
+                app:layout_constraintBottom_toBottomOf="@+id/gender"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.613"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.166" />
 
             <TextView
-                android:id="@+id/text_description"
+                android:id="@+id/place"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="12dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
                 android:text="@string/index_0"
                 android:textColor="@color/detail"
-                android:textSize="16sp"
-                app:layout_constraintStart_toStartOf="parent"
+                android:textSize="14sp"
+                app:layout_constraintStart_toEndOf="@+id/text_place"
                 app:layout_constraintTop_toBottomOf="@+id/text_name" />
 
-            <View
-                android:id="@+id/divider"
-                android:layout_width="300dp"
-                android:layout_height="1dp"
-                android:layout_marginTop="15dp"
-                android:background="@color/greyBackground"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/text_description" />
-
-            <TextView
-                android:id="@+id/displaytime"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:drawableStart="@drawable/ic_access_time_black_24dp"
-                android:text="@string/time"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/divider" />
-
             <ImageButton
-                android:id="@+id/btnChat"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
+                android:id="@+id/text_place"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="16dp"
                 android:background="@null"
-                android:contentDescription="@string/chat_button"
-                app:layout_constraintBottom_toBottomOf="@+id/displaytime"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.873"
-                app:layout_constraintStart_toEndOf="@+id/displaytime"
-                app:layout_constraintTop_toTopOf="@+id/displaytime"
-                app:layout_constraintVertical_bias="0.0"
-                app:srcCompat="@drawable/ic_chat_bubble_black_24dp" />
+                android:contentDescription="@string/place"
+                android:scaleType="fitXY"
+                android:text="@string/place"
+                app:layout_constraintBottom_toBottomOf="@+id/place"
+                app:layout_constraintStart_toStartOf="@+id/text_contact"
+                app:layout_constraintTop_toTopOf="@+id/place"
+                app:layout_constraintVertical_bias="1.0"
+                app:srcCompat="@drawable/ic_place_black_24dp" />
 
             <ImageButton
-                android:id="@+id/iconType"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_marginTop="168dp"
-                android:layout_marginEnd="2dp"
+                android:id="@+id/text_contact"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="8dp"
                 android:background="@null"
                 android:contentDescription="@string/type_pet"
                 android:scaleType="fitXY"
-                app:layout_constraintBottom_toBottomOf="@+id/btnChat"
-                app:layout_constraintEnd_toStartOf="@+id/iconStatus"
-                app:layout_constraintHorizontal_bias="0.957"
+                android:text="@string/contact"
+                app:layout_constraintBottom_toBottomOf="@+id/contact"
+                app:layout_constraintStart_toStartOf="@+id/iconType"
+                app:layout_constraintTop_toTopOf="@+id/contact"
+                app:layout_constraintVertical_bias="0.526"
+                app:srcCompat="@drawable/ic_call_black_24dp" />
+
+            <ImageButton
+                android:id="@+id/iconType"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="204dp"
+                android:background="@null"
+                android:contentDescription="@string/type_pet"
+                android:scaleType="fitXY"
+
+                app:layout_constraintBottom_toBottomOf="@+id/gender"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/btnChat"
-                app:layout_constraintVertical_bias="1.0"
                 app:srcCompat="@drawable/corgi" />
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/date"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginStart="16dp"-->
+            <!--                android:text="@string/date"-->
+            <!--                android:textColor="@color/detail"-->
+            <!--                app:layout_constraintBottom_toBottomOf="@+id/text_date"-->
+            <!--                app:layout_constraintStart_toEndOf="@+id/text_date"-->
+            <!--                app:layout_constraintTop_toTopOf="@+id/text_date" />-->
 
             <ImageButton
                 android:id="@+id/iconStatus"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_marginEnd="12dp"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
                 android:background="@null"
                 android:contentDescription="@string/find"
                 android:scaleType="fitXY"
-                app:layout_constraintBottom_toBottomOf="@+id/btnChat"
-                app:layout_constraintEnd_toStartOf="@+id/btnChat"
-                app:layout_constraintTop_toTopOf="@+id/btnChat"
-                app:layout_constraintVertical_bias="0.0"
+                app:layout_constraintBottom_toBottomOf="@+id/gender"
+                app:layout_constraintStart_toEndOf="@+id/iconType"
+                app:layout_constraintTop_toTopOf="@+id/gender"
+                app:layout_constraintVertical_bias="1.0"
                 tools:srcCompat="@drawable/love" />
+
+            <ImageButton
+                android:id="@+id/gender"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:background="@null"
+                android:contentDescription="@string/gender"
+                android:scaleType="fitXY"
+                android:text="@string/gender"
+                android:textColor="@color/detail"
+                app:layout_constraintStart_toEndOf="@+id/iconStatus"
+                app:layout_constraintTop_toBottomOf="@+id/contact"
+                tools:srcCompat="@drawable/femenine" />
+
+            <TextView
+                android:id="@+id/contact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/contact"
+                android:textColor="@color/detail"
+                app:layout_constraintStart_toEndOf="@+id/text_contact"
+                app:layout_constraintStart_toStartOf="@+id/place"
+                app:layout_constraintTop_toBottomOf="@+id/place" />
+
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>

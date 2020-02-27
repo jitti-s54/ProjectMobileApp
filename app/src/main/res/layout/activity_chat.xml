@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Chat">
+    tools:context=".ui.home.Chat">
 
     <ImageButton
         android:id="@+id/imageButton2"
@@ -60,7 +60,7 @@
             android:layout_height="40dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="18dp"
-            android:text="@string/userforname"
+            android:text="@string/username"
             app:layout_constraintStart_toEndOf="@+id/imageView"
             app:layout_constraintTop_toTopOf="parent" />
 

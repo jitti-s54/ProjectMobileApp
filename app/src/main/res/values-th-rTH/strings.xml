@@ -20,7 +20,7 @@
     <string name="index_0">ลำดับ</string>
     <string name="typesearch" >พิมพ์เพื่อค้นหา</string>
     <string name="typzssage" >พิมพ์ข้อความ</string>
-    <string name="userforname" >ชื่อผู้ใช้</string>
+    <string name="username">ชื่อผู้ใช้</string>
     <string name="seachtitle">ค้นหา</string>
     <string name="friendpet" >หาเพื่อน</string>
     <string name="lostpet" >สัตว์หาย</string>
