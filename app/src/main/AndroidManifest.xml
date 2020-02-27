@@ -21,8 +21,6 @@
             android:name=".MainActivity"
             android:label="@string/title_activity_bottomnavigation"
             android:theme="@style/AppTheme.splash" />
-        <activity android:name=".searchfilter" />
-        <activity android:name=".Navigate" />
         <activity
             android:name=".Bottomnavigation"
             android:windowSoftInputMode="adjustPan">

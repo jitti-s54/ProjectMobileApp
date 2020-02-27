@@ -30,4 +30,13 @@
     <string name="addH" >เพิ่ม</string>
     <string name="map">แผนที่</string>
     <string name="search">ค้นหา</string>
+    <string name="chat">แชท</string>
+    <string name="contact">ติดต่อ</string>
+    <string name="date">วันเกิด</string>
+    <string name="email">อีเมล์</string>
+    <string name="gender">เพศ</string>
+    <string name="login">เข้าสู่ระบบ</string>
+    <string name="password">รหัสผ่าน</string>
+    <string name="place">สถานที่</string>
+    <string name="user">ผู้ใช้</string>
 </resources>
