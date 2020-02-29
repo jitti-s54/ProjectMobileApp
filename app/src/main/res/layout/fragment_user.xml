@@ -1,92 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ui.user.UserFragment">
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        >
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/post"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:text="Post"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/friend"
+        app:layout_constraintEnd_toStartOf="@+id/friend"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/friend"
+        app:layout_constraintVertical_bias="0.0" />
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:background="@color/colorAccent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+    <TextView
+        android:id="@+id/countPost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/post"
+        app:layout_constraintStart_toStartOf="@+id/post"
+        app:layout_constraintTop_toTopOf="@+id/countFriend" />
 
-            <TextView
-                android:id="@+id/username"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="72dp"
-                android:text="@string/username"
-                android:textSize="24sp"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/friend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="64dp"
+        android:text="Friend"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/countFriend" />
 
-            <TextView
-                android:id="@+id/post"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="40dp"
-                android:text="Post"
-                android:textSize="18sp"
-                app:layout_constraintBottom_toBottomOf="@+id/friend"
-                app:layout_constraintEnd_toStartOf="@+id/friend"
-                app:layout_constraintTop_toTopOf="@+id/friend"
-                app:layout_constraintVertical_bias="0.0" />
+    <TextView
+        android:id="@+id/countFriend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="10"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/friend"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="@+id/friend"
+        app:layout_constraintTop_toTopOf="parent" />
 
-            <TextView
-                android:id="@+id/countPost"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:text="10"
-                android:textSize="18sp"
-                app:layout_constraintEnd_toEndOf="@+id/post"
-                app:layout_constraintHorizontal_bias="0.235"
-                app:layout_constraintStart_toStartOf="@+id/post"
-                app:layout_constraintTop_toBottomOf="@+id/username" />
+    <Button
+        android:id="@+id/editprofile"
+        android:layout_width="151dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/button_curve"
+        android:text="Edit profile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/friend" />
 
-            <TextView
-                android:id="@+id/friend"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="60dp"
-                android:text="Friend"
-                android:textSize="18sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/countFriend" />
 
-            <TextView
-                android:id="@+id/countFriend"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:text="10"
-                android:textSize="18sp"
-                app:layout_constraintEnd_toEndOf="@+id/friend"
-                app:layout_constraintHorizontal_bias="0.586"
-                app:layout_constraintStart_toStartOf="@+id/friend"
-                app:layout_constraintTop_toBottomOf="@+id/username" />
+    <Button
+        android:id="@+id/buttonAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="43dp"
+        android:layout_marginEnd="48dp"
+        android:drawableStart="@drawable/ic_add_black_24dp"
+        android:text="@string/addH"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
 
-            <Button
-                android:id="@+id/editprofile"
-                android:layout_width="151dp"
-                android:layout_height="43dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="50dp"
-                android:background="@drawable/button_curve"
-                android:text="Edit profile"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/friend" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:id="@+id/img_profile"
+        android:layout_width="96dp"
+        android:layout_height="108dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:mipmap/sym_def_app_icon" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
-</FrameLayout>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="169dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

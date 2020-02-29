@@ -11,15 +11,16 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/inputName"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="250dp"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:hint="@string/name"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.162">
+        app:layout_constraintVertical_bias="0.088"
+        android:clickable="false">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
@@ -27,12 +28,12 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/inputGender"
+        android:id="@+id/inputPedigree"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="250dp"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:hint="@string/sex"
+        android:layout_marginTop="8dp"
+        android:hint="@string/pedigree"
         app:layout_constraintStart_toStartOf="@+id/inputName"
         app:layout_constraintTop_toBottomOf="@+id/inputName">
 
@@ -44,12 +45,12 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/input"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="250dp"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:hint="@string/age"
-        app:layout_constraintStart_toStartOf="@+id/inputGender"
-        app:layout_constraintTop_toBottomOf="@+id/inputGender">
+        app:layout_constraintStart_toStartOf="@+id/inputPedigree"
+        app:layout_constraintTop_toBottomOf="@+id/inputPedigree">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
@@ -67,12 +68,12 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/input"
-        app:layout_constraintTop_toBottomOf="@+id/input" />
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup2" />
 
     <Button
         android:id="@+id/buttonAdd"
         android:layout_width="195dp"
-        android:layout_height="63dp"
+        android:layout_height="50dp"
         android:layout_marginTop="64dp"
         android:layout_marginBottom="8dp"
         android:background="@drawable/button_curve"
@@ -83,10 +84,51 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView7"
-        app:layout_constraintVertical_bias="0.451" />
+        app:layout_constraintVertical_bias="0.839" />
 
+    <TextView
+        android:id="@+id/gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:text="@string/gender"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/input"
+        app:layout_constraintTop_toBottomOf="@+id/input" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:checkedButton="@+id/first"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@+id/gender"
+        app:layout_constraintTop_toBottomOf="@+id/gender">
+
+        <RadioButton
+            android:id="@+id/first"
+            style="@style/MyMainRoundedActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_margin_top"
+            android:text="Male"
+            android:button="@null"
+            android:textColor="@android:color/black" />
+
+        <RadioButton
+            android:id="@+id/second"
+            style="@style/MyMainRoundedActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_margin_top"
+            android:buttonTint="#FFFFFF"
+            android:checked="false"
+            android:text="Female"
+            android:button="@null"
+            android:textColor="@android:color/black" />
+    </RadioGroup>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

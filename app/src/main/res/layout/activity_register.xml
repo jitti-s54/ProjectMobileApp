@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="@android:dimen/notification_large_icon_height"
         android:layout_marginTop="@android:dimen/notification_large_icon_height"
-        android:text="Register"
+        android:text="@string/register"
         android:textColor="@android:color/black"
         android:textSize="40sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -22,8 +22,8 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/inputName"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
         android:hint="@string/email"
         android:textColorHint="@color/detail"
         app:hintEnabled="true"
@@ -36,7 +36,7 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:padding="@dimen/activity_margin_top"
             android:textColor="@android:color/black" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -44,8 +44,8 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/password"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="250dp"
-        android:layout_height="0dp"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
         android:layout_marginTop="16dp"
         android:hint="@string/password"
         android:textColorHint="@color/detail"
@@ -55,7 +55,7 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:inputType="textPassword"
             android:padding="@dimen/activity_margin_top"
             android:textColor="@android:color/black" />
@@ -63,10 +63,10 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/confirmpassword"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="250dp"
-        android:layout_height="0dp"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
         android:layout_marginTop="16dp"
-        android:hint="Confirm password"
+        android:hint="@string/confirm_password"
         android:textColorHint="@color/detail"
         app:hintEnabled="true"
         app:layout_constraintStart_toStartOf="@+id/password"
@@ -74,7 +74,7 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:inputType="textPassword"
             android:padding="@dimen/activity_margin_top"
             android:textColor="@android:color/black" />
@@ -84,10 +84,10 @@
         android:id="@+id/signup_btn"
         android:layout_width="195dp"
         android:layout_height="50dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="96dp"
         android:background="@drawable/button_curve"
         android:elevation="10dp"
-        android:text="Sign Up"
+        android:text="@string/register"
         android:textAllCaps="false"
         android:textColor="@color/whiht"
         android:textSize="18sp"

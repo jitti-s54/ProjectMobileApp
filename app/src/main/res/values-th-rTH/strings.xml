@@ -39,4 +39,8 @@
     <string name="password">รหัสผ่าน</string>
     <string name="place">สถานที่</string>
     <string name="user">ผู้ใช้</string>
+    <string name="forgot_passwords">ลืมรหัสผ่าน ?</string>
+    <string name="sign_up">สมัครสมาชิก</string>
+    <string name="don_t_have_an_account">ไม่มีชื่อผู้ใช้</string>
+    <string name="pedigree">สายพันธ์</string>
 </resources>

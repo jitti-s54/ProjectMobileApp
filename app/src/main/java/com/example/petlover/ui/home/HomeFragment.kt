@@ -4,7 +4,9 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentActivity
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -24,7 +26,7 @@ class HomeFragment : Fragment() {
         val root = inflater.inflate(R.layout.fragment_home, container, false)
         val recyclerView = root.findViewById(R.id.recyclerView) as RecyclerView
         recyclerView.layoutManager = GridLayoutManager(context, 1, GridLayoutManager.VERTICAL, false)
-
+//        FragmentActivity.
         var users = ArrayList<Model>()
         users.add(
             Model(
