@@ -43,4 +43,7 @@
     <string name="sign_up">สมัครสมาชิก</string>
     <string name="don_t_have_an_account">ไม่มีชื่อผู้ใช้</string>
     <string name="pedigree">สายพันธ์</string>
+    <string name="register">สมัคร</string>
+    <string name="confirm_password">ยืนยันรหัสผ่าน</string>
+    <string name="wrongconfirm">รหัสผ่านและยืนยันรหัสผ่านไม่ตรงกัน</string>
 </resources>

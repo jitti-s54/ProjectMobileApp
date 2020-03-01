@@ -3,6 +3,7 @@ package com.example.petlover
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.google.android.material.textfield.TextInputEditText
 import kotlinx.android.synthetic.main.activity_login.*
 
 class LoginActivity : AppCompatActivity() {
@@ -14,9 +15,12 @@ class LoginActivity : AppCompatActivity() {
             val intent = Intent(this, RegisterActivity::class.java)
             startActivity(intent)
         }
-        signin_btn.setOnClickListener {
-            val intent = Intent(this, Bottomnavigation::class.java)
-            startActivity(intent)
-        }
+    }
+
+    fun loginfun(){
+        val email = findViewById<TextInputEditText>(R.id.inputEmaillogin)
+        val pass = findViewById<TextInputEditText>(R.id.passlogin)
+
+
     }
 }

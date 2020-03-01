@@ -58,7 +58,9 @@
     <string name="attachment_summary_on" translatable="false">Automatically download attachments for incoming emails
     </string>
     <string name="attachment_summary_off" translatable="false">Only download attachments when manually requested</string>
-    <string name="pedigree" translatable="false">Pedigree</string>
+    <string name="pedigree">Pedigree</string>
     <string name="register">Register</string>
     <string name="confirm_password">Confirm password</string>
+    <string name="map">map</string>
+    <string name="wrongconfirm">Your password and confirmation password do not match.</string>
 </resources>

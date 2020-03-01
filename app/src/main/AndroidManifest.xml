@@ -17,7 +17,13 @@
             android:parentActivityName=".Bottomnavigation" />
         <activity
             android:name=".RegisterActivity"
-            android:theme="@style/AppTheme.splash" />
+            android:theme="@style/AppTheme.splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".LoginActivity"
             android:theme="@style/NoActionBar" />
