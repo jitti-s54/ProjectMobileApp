@@ -7,6 +7,7 @@ import android.view.View
 import android.widget.TextView
 import com.google.android.material.textfield.TextInputEditText
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.firestore.FirebaseFirestore
 import kotlinx.android.synthetic.main.activity_login.signup_btn
 
 class RegisterActivity : AppCompatActivity() {
@@ -34,11 +35,23 @@ class RegisterActivity : AppCompatActivity() {
         val checkmail: Boolean = isEmailValid(username)
         if (checkmail && confirmpass == pass && pass.length <= 6){
             showrong.visibility = View.GONE
+            val db = FirebaseFirestore.getInstance()
             FirebaseAuth.getInstance().createUserWithEmailAndPassword(username,pass)
                 .addOnCompleteListener{
                     if(!it.isSuccessful) return@addOnCompleteListener
-                    Log.d("RegisterActivity","Succefuly ${it.result?.user?.uid}")
+                    var uid = it.result?.user?.uid
+                    Log.d("RegisterActivity","Successfully ${uid}")
+                    val user = hashMapOf(
+                        "email" to username,
+                        "uid" to uid
+                    )
+                    if (uid != null) {
+                        db.collection("users").document(uid).set(user)
+                            .addOnSuccessListener { Log.d("RegisterActivity", "DocumentSnapshot successfully written!") }
+                            .addOnFailureListener { e -> Log.w("RegisterActivity", "Error writing document", e) }
+                    }
                 }
+
         }
         else{
             var somwrong: String= ""
@@ -49,7 +62,7 @@ class RegisterActivity : AppCompatActivity() {
                 somwrong += "Your password and confirmation password do not match.\n"
             }
             if (!checkmail){
-                somwrong += "Wrong Pattern in E-mail\n"
+                somwrong += "Bad format E-mail\n"
             }
             if (username.isEmpty()){
                 somwrong += "Enter Your E-mail\n"
