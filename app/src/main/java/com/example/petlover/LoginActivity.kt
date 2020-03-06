@@ -18,11 +18,12 @@ class LoginActivity : AppCompatActivity() {
         }
         signup_btn.setOnClickListener {
             val intent = Intent(this, RegisterActivity::class.java)
+            finishAffinity();
             startActivity(intent)
         }
     }
 
-    fun loginfun(){
+    private fun loginfun(){
         val email = findViewById<TextInputEditText>(R.id.inputEmaillogin).text.toString()
         val pass = findViewById<TextInputEditText>(R.id.passlogin).text.toString()
         Log.d("login",email)
@@ -31,9 +32,9 @@ class LoginActivity : AppCompatActivity() {
         auth.signInWithEmailAndPassword(email,pass)
             .addOnCompleteListener{
                 if(!it.isSuccessful) return@addOnCompleteListener
-
                 Log.d("login","Successfully login ${it.result?.user?.uid}")
                 val intent = Intent(this, Bottomnavigation::class.java)
+                finishAffinity();
                 startActivity(intent)
 
             }

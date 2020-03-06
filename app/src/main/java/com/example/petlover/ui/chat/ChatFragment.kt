@@ -11,10 +11,13 @@ import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.petlover.R
+import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.FirebaseDatabase
 
 class ChatFragment : Fragment() {
 
     private lateinit var notificationsViewModel: ChatViewModel
+    private lateinit var database: DatabaseReference
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -29,6 +32,7 @@ class ChatFragment : Fragment() {
 //            textView.text = it
 //        })  may be use
         val recyclerView = root.findViewById(R.id.recyclerViewChat) as RecyclerView
+        database = FirebaseDatabase.getInstance().reference
         recyclerView.layoutManager = GridLayoutManager(context,1, GridLayoutManager.VERTICAL, false)
         val chat = ArrayList<ChatModel>()
         chat.add(ChatModel("dog","15:19", "Hello world"))

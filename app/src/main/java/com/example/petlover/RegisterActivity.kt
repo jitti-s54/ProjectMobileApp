@@ -1,5 +1,6 @@
 package com.example.petlover
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -9,6 +10,7 @@ import com.google.android.material.textfield.TextInputEditText
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 import kotlinx.android.synthetic.main.activity_login.signup_btn
+import kotlinx.android.synthetic.main.activity_register.*
 
 class RegisterActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -16,33 +18,40 @@ class RegisterActivity : AppCompatActivity() {
         setContentView(R.layout.activity_register)
         signup_btn.setOnClickListener {
             registerfun()
-            //val intent = Intent(this, Bottomnavigation::class.java)
-            //startActivity(intent)
-
+        }
+        cancel_btn.setOnClickListener{
+            findViewById<TextInputEditText>(R.id.inputEmailreg).text?.clear()
+            findViewById<TextInputEditText>(R.id.inputPassreg).text?.clear()
+            findViewById<TextInputEditText>(R.id.cPassreg).text?.clear()
+            val intent = Intent(this, LoginActivity::class.java)
+            finishAffinity();
+            startActivity(intent)
         }
 
     }
 
     private fun registerfun(){
-        val username = findViewById<TextInputEditText>(R.id.inputEmailreg).text.toString()
+        val email = findViewById<TextInputEditText>(R.id.inputEmailreg).text.toString()
         val pass = findViewById<TextInputEditText>(R.id.inputPassreg).text.toString()
         val confirmpass = findViewById<TextInputEditText>(R.id.cPassreg).text.toString()
         val showrong =  findViewById<TextView>(R.id.showwrog)
 
-        Log.d("RegisterActivity", username)
+        Log.d("RegisterActivity", email)
         Log.d("RegisterActivity",pass)
         Log.d("RegisterActivity",confirmpass)
-        val checkmail: Boolean = isEmailValid(username)
+        val checkmail: Boolean = isEmailValid(email)
         if (checkmail && confirmpass == pass && pass.length <= 6){
             showrong.visibility = View.GONE
             val db = FirebaseFirestore.getInstance()
-            FirebaseAuth.getInstance().createUserWithEmailAndPassword(username,pass)
+            FirebaseAuth.getInstance().createUserWithEmailAndPassword(email,pass)
                 .addOnCompleteListener{
                     if(!it.isSuccessful) return@addOnCompleteListener
+                    var username = usernameFromEmail(email)
                     var uid = it.result?.user?.uid
                     Log.d("RegisterActivity","Successfully ${uid}")
                     val user = hashMapOf(
-                        "email" to username,
+                        "username" to username,
+                        "email" to email,
                         "uid" to uid
                     )
                     if (uid != null) {
@@ -50,10 +59,14 @@ class RegisterActivity : AppCompatActivity() {
                             .addOnSuccessListener { Log.d("RegisterActivity", "DocumentSnapshot successfully written!") }
                             .addOnFailureListener { e -> Log.w("RegisterActivity", "Error writing document", e) }
                     }
+                    val intent = Intent(this, Bottomnavigation::class.java)
+                    finishAffinity();
+                    startActivity(intent)
                 }
 
         }
         else{
+
             var somwrong: String= ""
             if (pass.length != 6){
                 somwrong += "Your password need least than 6 character\n"
@@ -64,7 +77,7 @@ class RegisterActivity : AppCompatActivity() {
             if (!checkmail){
                 somwrong += "Bad format E-mail\n"
             }
-            if (username.isEmpty()){
+            if (email.isEmpty()){
                 somwrong += "Enter Your E-mail\n"
             }
             if (pass.isEmpty()){
@@ -78,6 +91,13 @@ class RegisterActivity : AppCompatActivity() {
 
     private fun isEmailValid(email: String): Boolean {
         return android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches()
+    }
+    private fun usernameFromEmail(email: String): String {
+        return if (email.contains("@")) {
+            email.split("@".toRegex()).dropLastWhile { it.isEmpty() }.toTypedArray()[0]
+        } else {
+            email
+        }
     }
 
 }
