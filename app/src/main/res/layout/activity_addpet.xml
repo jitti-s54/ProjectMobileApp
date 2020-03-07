@@ -112,7 +112,7 @@
         app:layout_constraintTop_toBottomOf="@+id/gender">
 
         <RadioButton
-            android:id="@+id/first"
+            android:id="@+id/Male"
             style="@style/MyMainRoundedActionButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -122,7 +122,7 @@
             android:textColor="@android:color/black" />
 
         <RadioButton
-            android:id="@+id/second"
+            android:id="@+id/Female"
             style="@style/MyMainRoundedActionButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

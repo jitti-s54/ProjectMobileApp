@@ -13,6 +13,7 @@ class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
+        checkUser ()
         signin_btn.setOnClickListener {
             loginfun()
         }
@@ -38,8 +39,30 @@ class LoginActivity : AppCompatActivity() {
                 startActivity(intent)
 
             }
+    }
+    private fun checkUser () {
+        val user = FirebaseAuth.getInstance().currentUser
+        user?.let {
+            for (profile in it.providerData) {
+                // Id of the provider (ex: google.com)
+                val providerId = profile.providerId
 
+                // UID specific to the provider
+                val uid = profile.uid
 
+                // Name, email address, and profile photo Url
+                val name = profile.displayName
+                val email = profile.email
+                val photoUrl = profile.photoUrl
+                val userProfile = User(providerId,uid,name,email)
+            }
 
+        }
+
+        if (user != null) {
+            val intent = Intent(this, Bottomnavigation::class.java)
+            finishAffinity();
+            startActivity(intent)
+        }
     }
 }
