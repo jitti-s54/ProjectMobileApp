@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.View
 import com.google.android.material.textfield.TextInputEditText
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_login.*
@@ -38,7 +39,10 @@ class LoginActivity : AppCompatActivity() {
                 finishAffinity();
                 startActivity(intent)
 
-            }
+            }.addOnFailureListener{
+                var somwrong: String? = it.message
+                showwronglogin.text = somwrong
+                showwronglogin.visibility = View.VISIBLE}
     }
     private fun checkUser () {
         val user = FirebaseAuth.getInstance().currentUser
