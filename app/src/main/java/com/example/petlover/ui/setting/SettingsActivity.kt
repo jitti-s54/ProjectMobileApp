@@ -92,6 +92,7 @@ class SettingsActivity : AppCompatActivity(),
             firebaseAuth.signOut();
             val intent = android.content.Intent(context, LoginActivity::class.java)
             startActivity(intent)
+            //logout
 
         }
 
